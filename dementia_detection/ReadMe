@@ -1,0 +1,61 @@
+Mô tả
+Ứng dụng web sử dụng Django để phát hiện các giai đoạn sa sút trí tuệ từ hình ảnh MRI. 
+Ứng dụng cho phép người dùng tải lên một hình ảnh MRI và nhận dự đoán về giai đoạn sa sút trí tuệ.
+
+## Yêu cầu
+	- Python 3.8+
+	- Django 3.2+
+	- TensorFlow 2.5+
+## Triển khai hệ thống
+# Môi trường ảo
+
+1. **Tạo môi trường ảo:**
+
+    ```bash
+    python -m venv venv
+    ```
+2. **Kích hoạt môi trường ảo:**
+
+        ```bash
+        venv\Scripts\activate
+
+
+3. **Cài đặt các gói cần thiết:**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+# Django
+4. **Cài đặt dự án Django:**
+
+    - **Áp dụng các migrations:**
+
+        ```bash
+        python manage.py migrate
+        ```
+5. **Chạy server phát triển của Django:**
+
+    ```bash
+    python manage.py runserver
+    ```
+6. **Truy cập ứng dụng:**
+
+    Mở trình duyệt web và truy cập `http://127.0.0.1:8000/upload/` 
+để tải lên hình ảnh MRI và nhận dự đoán.
+
+# Sử dụng
+
+7. **Tải lên Hình ảnh:**
+
+    - Truy cập `http://127.0.0.1:8000/upload/`
+    - Chọn một file hình ảnh MRI từ máy tính của bạn
+    - Nhấn nút "Upload"
+
+8. **Xem Dự đoán:**
+
+    - Sau khi tải lên, ứng dụng web sẽ hiển thị giai đoạn sa sút trí tuệ được dự đoán.
+
+## Lưu ý
+file ảnh test: dementia_detection\dementia_detection\image_test
+file mô hình : dementia_detection_model.h5`
+
